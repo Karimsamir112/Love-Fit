@@ -394,6 +394,12 @@ function changeClass() {
 
 // loading bar when the page is loading
 
+function hideMan() {
+	document.querySelector(".runningMan").style.display = "none" ;
+	document.body.style.overflowY = "visible";
+	document.getElementById("allBody").style.opacity = "1"; 
+}
+
 document.onreadystatechange = function () {
             if (document.readyState === "complete") {
                 console.log(document.readyState);
